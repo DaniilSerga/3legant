@@ -1,0 +1,20 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.container {
+    // background-color: $black;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+
+    & > div {
+        max-width: 300px;
+        border: 1px solid $chineseBlack;
+    }
+    & > div > img {
+        width: 300px;
+        height: auto;
+    }
+}

@@ -8,7 +8,7 @@ export interface InitialState {
 
 export interface IGetProductsProps {
 	limit?: number;
-	sort: 'desc' | 'asc';
+	sort?: 'desc' | 'asc';
 }
 
 export interface IUpdateProductProps {
