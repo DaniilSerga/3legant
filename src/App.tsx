@@ -2,15 +2,18 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 
 import {Footer, Header} from 'components';
-import {MainPage} from 'pages';
+import {AuthPage, MainPage} from 'pages';
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<Routes>
-				<Route path="/" element={<MainPage />} />
-			</Routes>
+			<main>
+				<Routes>
+					<Route path="/" element={<MainPage />} />
+					<Route path="/auth" element={<AuthPage />} />
+				</Routes>
+			</main>
 			<Footer />
 		</>
 	);
