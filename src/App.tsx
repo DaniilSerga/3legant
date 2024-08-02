@@ -11,7 +11,16 @@ const App = () => {
 			<main>
 				<Routes>
 					<Route path="/" element={<MainPage />} />
-					<Route path="/auth" element={<AuthPage />} />
+					<Route path="/auth">
+						<Route
+							path="sign-in"
+							element={<AuthPage isSignIn={true} />}
+						/>
+						<Route
+							path="sign-up"
+							element={<AuthPage isSignIn={false} />}
+						/>
+					</Route>
 				</Routes>
 			</main>
 			<Footer />

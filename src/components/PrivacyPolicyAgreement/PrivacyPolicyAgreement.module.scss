@@ -1,0 +1,29 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & > p {
+        color: $nickel;
+        @include textRegular();
+    }
+
+    & > p > a {
+        color: $chineseBlack;
+        text-decoration: none;
+        @include textSemi(16px, 26px);
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    &:checked {
+        accent-color: $chineseBlack;
+    }
+}

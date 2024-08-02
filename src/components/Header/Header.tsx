@@ -77,7 +77,7 @@ const Header: FC = () => {
 						</>
 					) : (
 						<div className={styles.signInContainer}>
-							<Link to="/auth">Sign in</Link>
+							<Link to="/auth/sign-in">Sign in</Link>
 						</div>
 					)}
 				</div>

@@ -4,3 +4,17 @@
     line-height: $lineHeight;
     font-weight: 400;
 }
+
+@mixin textMedium($fontSize: 40px, $lineHeight: 44px) {
+    font-family: "Space Grotesk";
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: 500;
+}
+
+@mixin textSemi($fontSize: 16px, $lineHeight: 26px) {
+    font-family: "Space Grotesk";
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: 600;
+}
